@@ -7,7 +7,7 @@ import (
 )
 var db *sql.DB
 func init(){
-	db,_ = sql.Open("mysql", "alva:zhangguang@tcp(banlan6.cn:3306)/alva")
+	db,_ = sql.Open("mysql", "user:pass@tcp(yourhost.cn:3306)/db_name")
 	db.SetMaxIdleConns(1000)
 	db.SetMaxOpenConns(2000)
 	db.Ping()
